@@ -26,6 +26,13 @@ body {
 	margin-left: 20px;
 }
 
+#galeria2 img{
+	width: 930px;
+	height: 420px;
+	padding: 10px;
+	margin-left: 20px;
+}
+
 a {text-decoration: none;}
 ul {list-style: none;}
 img {max-width: 100%;}
@@ -53,6 +60,15 @@ img {max-width: 100%;}
   font-size: 25px;
 
 }
+.btn-menu2 {
+	width: 56px;
+	height: 56px; float: right;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background: linear-gradient(to right, #ce2e3c, #da6709);
+}
 
 /* MENU */
 .menu {
@@ -63,6 +79,18 @@ img {max-width: 100%;}
 	background-color: rgba(0,0,0,0.9);
 	top: 0;
 	left: 0;
+	z-index: 99;
+}
+
+.btn-menu {
+	width: 56px; 
+	height: 74px; 
+	float: left; 
+	text-align: center;
+	color: #fff; 
+	border-radius: 56px; 
+	cursor: pointer;
+	background: linear-gradient(to right, #ce2e3c, #da6709);
 }
 
 .btn-close {
@@ -84,3 +112,32 @@ img {max-width: 100%;}
 .banner h3 {font-size: 1.5em; color: #fff;}
 .banner h4 {font-size: 2em; color: #fff; padding: 3% 4%;}
 .banner h5 {font-size: 3em; color: #fff; font-weight: 700;}
+.banner td {font-size: 3em; color: #fff;}
+
+.fundo {
+  background: linear-gradient(to left, #191970, #fff);
+  height:1000px;
+}
+
+.form-horizontal {
+  color: #fff;
+}
+
+.contrata {
+  color: #fff;
+}
+
+.container {
+  padding-top: 150px;
+  
+}
+
+.rodape {
+	color: white;
+    margin-left: 33%;
+    margin-top: 100px;
+	
+}
+
+
+

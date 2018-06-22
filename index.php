@@ -13,45 +13,16 @@
 	</head>
 	<body>
         <header class="cabecalho">
-          <a href="index.html"> <h1 class="logo"> BAGUNCINHA </h1> </a>
-					<?php
-						if (!isset($_SESSION)) session_start();
-
-						if (isset($_SESSION['usuario'])) {
-							echo "Bem vindo, " . $_SESSION['usuario'];
-
-							echo
-								'<form method="post" action="logoff.php">
-									<input value="Logoff" type="submit">
-								</form>';
-						}
-						else{
-							echo
-								' <form class="login" method="POST" action="login.php">
-									<label>Usuário:</label>
-									<input type="text" name="usuario">
-
-									<label>Senha:</label>
-									<input type="password" name="senha">
-
-									<input type="submit" id="cadastro">
-								</form>
-								';
-
-						}
-					?>
+          <a href="index.php"> <h1 class="logo"> BAGUNCINHA </h1> </a>
+					
 			<nav class="menu">
 				<a class="btn-close"> x </a>
 				<ul>
 					<li> <a href="index.php"> INICIO                 </a> </li>
-					<li> <a href="series.php"> GÊNEROS               </a> </li>
-					<li> <a href="acao.php"> FISK BALL CAT           </a> </li>
-					<li> <a href="animacao.php"> ASS                 </a> </li>
-					<li> <a href="comedia.php"> MASSAGEM ESPANHOLA 	 </a> </li>
-					<li> <a href="ficcao.php"> INVERSÃO              </a> </li>
-					<li> <a href="guerra.php"> DOMINAÇÃO             </a> </li>
-					<li> <a href="romance.php"> BANHO DOURADO        </a> </li>
-					<li> <a href="terror.php"> PUSSV                 </a> </li>
+					<li> <a href="contato.php"> CONTATO               </a> </li>
+					<li> <a href="casa.php"> SOBRE A CASA           </a> </li>
+					<li> <a href="trabalhe.php"> TRABALHE CONOCO                 </a> </li>
+					
 			</nav>
 		</header>
 		<div class="banner">
@@ -61,9 +32,13 @@
         <h3> Esses conteúdos são dirigidos especificamente para pessoas maiores de idade e que, segundo a <br> legislação aplicável, tenham plena capacidade para acessar produtos
         relacionados a sexo e outros.<br> Fica terminantimente proibido o acesso a esses materiais por aqueles que não cumpram <br>tais requisitos. Caso você não atenda a algum dos requesitos anteriormente
       expostos fica obrigado a clicar <br>em Sair. Para acessar o conteudo, é obrigatorio fazer o login. </h3>
+		<button onclick="window.location.href='inicio.php'">sim</button>
+		<button onclick="window.location.href='http://www.google.com'">Não</button>
+		<div style="margin-left: -40px;" class="vtem-block-inside clearfix rodape">Baguncinha © 2018. Todos os direitos Reservados.</div>  
 			</div>
+			
 		</div>
-
+		
 	<script>
 	$(".btn-menu").on('click', function(){
 		$('.menu').show();
