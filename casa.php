@@ -11,13 +11,30 @@
 			<script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
 	</head>
 	<body>
-	
-		
-	
+
+
+
         <header class="cabecalho">
           <a href="index.php"> <h1 class="logo"> BAGUNCINHA </h1> </a>
           <button class="btn-menu"> <img src="https://png.icons8.com/menu/ios7/25"> </button>
-		  
+
+					<div class="bnv">
+					<?php
+								if (!isset($_SESSION)) session_start();
+
+								if (isset($_SESSION['usuario'])) {
+									$menu = true;
+									echo "Bem vindo, " . $_SESSION['usuario'];
+
+									echo
+										'<form method="post" action="logoff.php">
+										<input value="Logoff" type="submit" id="cadastro2">
+										</form>';
+								}
+
+							?>
+						</div>
+
 			<nav class="menu">
 				<a class="btn-close"> x </a>
 				<ul>
@@ -25,7 +42,11 @@
 					<li> <a href="contato.php"> CONTATO               </a> </li>
 					<li> <a href="casa.php"> SOBRE A CASA           </a> </li>
 					<li> <a href="trabalhe.php"> TRABALHE CONOCO    </a> </li>
-					<li> <a href="logoff.php"> SAIR                 </a> </li>
+					<?php if($menu){
+						echo "<li> <a href='dash.php'> CADASTRAR  </a> </li>";
+						echo "<li> <a href='logoff.php'> 	SAIR                 	</a> </li>";
+
+					}?>
 			</nav>
 		</header>
 		<div class="banner">
@@ -53,14 +74,14 @@
 			<li><a href="#"> Wifi.</a></li> <br>
 			</ul>
 			</ul>
-			
+
 <ul class="list-link">
 <li><img style="display: block; margin-left: auto; margin-right: auto;" src="img/cartoes.png"></li> <br>
 </ul></div></div>
 <div class="vtem-block-inside clearfix">Baguncinha © 2018. Todos os direitos Reservados.</div>
 		</div>
-		
-		
+
+
 
 	<script>
 	$(".btn-menu").on('click', function(){

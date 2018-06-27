@@ -17,6 +17,38 @@
 		<header class="cabecalho">
 			<a href="index.php"> <h1 class="logo"> BAGUNCINHA </h1> </a>
 			<button class="btn-menu"> <img src="https://png.icons8.com/menu/ios7/25"> </button>
+
+
+				<div class="bnv">
+				<?php
+							if (!isset($_SESSION)) session_start();
+
+							if (isset($_SESSION['usuario'])) {
+								$menu = true;
+								echo "Bem vindo, " . $_SESSION['usuario'];
+
+								echo
+									'<form method="post" action="logoff.php">
+									<input value="Logoff" type="submit" id="cadastro2">
+									</form>';
+							}
+							else{
+								echo
+									' <form class="login" method="POST" action="login.php">
+										<label>Usuário:</label>
+										<input type="text" name="usuario">
+
+										<label>Senha:</label>
+										<input type="password" name="senha">
+
+										<input type="submit" id="cadastro">
+									</form>
+									';
+
+							}
+						?>
+				</div>
+
 			<nav class="menu">
 				<a class="btn-close"> x </a>
 				<ul>
@@ -24,10 +56,14 @@
 					<li> <a href="contato.php"> CONTATO               </a> </li>
 					<li> <a href="casa.php"> SOBRE A CASA           </a> </li>
 					<li> <a href="trabalhe.php"> TRABALHE CONOCO    </a> </li>
-					<li> <a href="logoff.php"> SAIR                 </a> </li>
-				</ul>	
+					<?php if($menu){
+						echo "<li> <a href='dash.php'> CADASTRAR  </a> </li>";
+						echo "<li> <a href='logoff.php'> 	SAIR                 	</a> </li>";
+
+					}?>
+				</ul>
 			</nav>
-			
+
 		</header>
 
 		<div class="banner">
@@ -67,7 +103,7 @@
 
   			<button type="submit" class="btn btn-primary">Submit</button>
 
-			  <div class="vtem-block-inside clearfix"> Baguncinha © 2018. Todos os direitos Reservados. </div> <br>	
+			  <div class="vtem-block-inside clearfix"> Baguncinha © 2018. Todos os direitos Reservados. </div> <br>
 </form>
 
 				</div>

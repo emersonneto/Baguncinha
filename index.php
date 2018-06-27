@@ -14,7 +14,7 @@
 	<body>
         <header class="cabecalho">
           <a href="index.php"> <h1 class="logo"> BAGUNCINHA </h1> </a>
-					
+
 			<nav class="menu">
 				<a class="btn-close"> x </a>
 				<ul>
@@ -22,7 +22,12 @@
 					<li> <a href="contato.php"> CONTATO               </a> </li>
 					<li> <a href="casa.php"> SOBRE A CASA           </a> </li>
 					<li> <a href="trabalhe.php"> TRABALHE CONOCO                 </a> </li>
-					
+					<?php if($menu){
+						echo "<li> <a href='dash.php'> CADASTRAR  </a> </li>";
+						echo "<li> <a href='logoff.php'> 	SAIR                 	</a> </li>";
+
+					}?>
+
 			</nav>
 		</header>
 		<div class="banner">
@@ -31,14 +36,14 @@
 				<h2> Os conteúdos que você pretende vizualizar podem incluir<br> texto, imagens ou outros materiais para adultos </h2>
         <h3> Esses conteúdos são dirigidos especificamente para pessoas maiores de idade e que, segundo a <br> legislação aplicável, tenham plena capacidade para acessar produtos
         relacionados a sexo e outros.<br> Fica terminantimente proibido o acesso a esses materiais por aqueles que não cumpram <br>tais requisitos. Caso você não atenda a algum dos requesitos anteriormente
-      expostos fica obrigado a clicar <br>em Sair. Para acessar o conteudo, é obrigatorio fazer o login. </h3>
-		<button onclick="window.location.href='inicio.php'">sim</button>
-		<button onclick="window.location.href='http://www.google.com'">Não</button>
-		<div style="margin-left: -40px;" class="vtem-block-inside clearfix rodape">Baguncinha © 2018. Todos os direitos Reservados.</div>  
+      expostos fica obrigado a clicar <br>em Sair. Para acessar o conteudo, é obrigatorio fazer o login. </h3> <br>
+		<button class="btn-sim" onclick="window.location.href='inicio.php'">SIM</button>
+		<button class="btn-nao" onclick="window.location.href='http://www.google.com'">NÃO</button>
+		<div style="margin-left: -40px;" class="vtem-block-inside clearfix rodape">Baguncinha © 2018. Todos os direitos Reservados.</div>
 			</div>
-			
+
 		</div>
-		
+
 	<script>
 	$(".btn-menu").on('click', function(){
 		$('.menu').show();

@@ -83,12 +83,12 @@ img {max-width: 100%;}
 }
 
 .btn-menu {
-	width: 56px; 
-	height: 74px; 
-	float: left; 
+	width: 56px;
+	height: 74px;
+	float: left;
 	text-align: center;
-	color: #fff; 
-	border-radius: 56px; 
+	color: #fff;
+	border-radius: 56px;
 	cursor: pointer;
 	background: linear-gradient(to right, #ce2e3c, #da6709);
 }
@@ -129,15 +129,156 @@ img {max-width: 100%;}
 
 .container {
   padding-top: 150px;
-  
+
 }
 
 .rodape {
 	color: white;
     margin-left: 33%;
     margin-top: 100px;
-	
+
+}
+
+.btn-sim {
+	width: 75px;
+	height: 44px;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+
+.btn-nao {
+	width: 75px;
+	height: 44px;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+
+.btn-cad {
+	width: 210px;
+	height: 44px;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+
+.btn-atu {
+	width: 210px;
+	height: 44px;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+
+.btn-rel {
+	width: 210px;
+	height: 44px;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+
+.btn-cadfunc {
+	width: 143px;
+	height: 34px;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+
+.ncad {
+
+  border-radius: 5px;
+  width: 230px;
+
+}
+
+.esp {
+
+  border-radius: 5px;
+  width: 230px;
+
+}
+
+.custo {
+
+  border-radius: 5px;
+  width: 230px;
+
+}
+
+.ht {
+
+  border-radius: 5px;
+  width: 230px;
+
+}
+
+.tipo {
+
+  border-radius: 5px;
+  width: 230px;
+
+}
+
+.local {
+
+  border-radius: 5px;
+  width: 230px;
+
+}
+
+.prod {
+
+  border-radius: 5px;
+  width: 230px;
+
+}
+
+.status {
+
+  border-radius: 5px;
+  width: 230px;
+
+}
+
+.bnv {
+
+  float: right;
+  
 }
 
 
+#cadastro {
+	width: 75px;
+	height: 44px;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background: linear-gradient(to right, #ce2e3c, #da6709);
+}
 
+#cadastro2 {
+	width: 75px;
+	height: 44px;
+  float: left;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background: linear-gradient(to right, #ce2e3c, #da6709);
+}

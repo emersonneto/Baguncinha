@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +29,25 @@
 <body>
 <header class="cabecalho">
           <a href="inicio.php"> <h1 class="logo"> BAGUNCINHA </h1> </a>
-		  <button class="btn-menu"> <img src="https://png.icons8.com/menu/ios7/25"> </button>			
+		  <button class="btn-menu"> <img src="https://png.icons8.com/menu/ios7/25"> </button>
+
+			<div class="bnv">
+			<?php
+						if (!isset($_SESSION)) session_start();
+
+						if (isset($_SESSION['usuario'])) {
+							$menu = true;
+							echo "Bem vindo, " . $_SESSION['usuario'];
+
+							echo
+								'<form method="post" action="logoff.php">
+								<input value="Logoff" type="submit" id="cadastro2">
+								</form>';
+						}
+
+					?>
+				</div>
+
 			<nav class="menu">
 			<a class="btn-close"> x </a>
 			<ul>
@@ -37,7 +55,12 @@
 				<li> <a href="contato.php"> CONTATO               </a> </li>
 				<li> <a href="casa.php"> SOBRE A CASA           </a> </li>
 				<li> <a href="trabalhe.php"> TRABALHE CONOCO                 </a> </li>
-					
+				<?php if($menu){
+					echo "<li> <a href='dash.php'> CADASTRAR  </a> </li>";
+					echo "<li> <a href='logoff.php'> 	SAIR                 	</a> </li>";
+
+				}?>
+
 			</nav>
 		</header>
 
@@ -53,7 +76,7 @@
 		Local de trabalho: Araraquara - SP <br>
 		Irá trabalhar em casa noturna das 19hs às 07hs de segunda á sexta. <br>
 		Responsável por manter a limpeza do local.<br>
-		
+
     </p>
   </div>
   <h3>Auxiliar de Limpeza</h3>
@@ -74,7 +97,7 @@
 		Local de trabalho: São Paulo, SP <br>
 		Atuar como segurança patrimonial, realizar rondas nas imediações, relatar ocorrências, entre demais atividades. <br>
 		Desejável experiência como segurança. <br>
-		
+
     </p>
   </div>
   <h3>Recepcionista</h3>
@@ -148,14 +171,14 @@
 
 		  </fieldset>
 		</form>
-		
-		<div class="vtem-block-inside clearfix rodape">Baguncinha © 2018. Todos os direitos Reservados.</div> 
-		
+
+		<div class="vtem-block-inside clearfix rodape">Baguncinha © 2018. Todos os direitos Reservados.</div>
+
 		<script src="js/script.js"></script>
 
 </div>
 
-	
+
 
   </body>
 
