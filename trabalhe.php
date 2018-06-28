@@ -25,7 +25,6 @@
 	  </script>
 
 </head>
-<div class="fundo">
 <body>
 <header class="cabecalho">
           <a href="inicio.php"> <h1 class="logo"> BAGUNCINHA </h1> </a>
@@ -63,6 +62,8 @@
 
 			</nav>
 		</header>
+
+	<div class="banner">
 
 	<div class="container">
 	<br>
@@ -175,6 +176,7 @@
 		<div class="vtem-block-inside clearfix rodape">Baguncinha © 2018. Todos os direitos Reservados.</div>
 
 		<script src="js/script.js"></script>
+	</div>
 
 </div>
 

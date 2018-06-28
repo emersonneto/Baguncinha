@@ -46,9 +46,10 @@ img {max-width: 100%;}
 
 .logo {
 	width: 150px;
-	height: 70px;
+	height: 90px;
 	float: left;
-	background-image: url("../img/fire.png");
+  background-position: center;
+	background-image: url("../img/logo.jpg");
 	background-repeat: no-repeat;
 	background-size: 70px;
 	font-size: 0;
@@ -84,8 +85,9 @@ img {max-width: 100%;}
 
 .btn-menu {
 	width: 56px;
-	height: 74px;
+	height: 88px;
 	float: left;
+  background-position: center;
 	text-align: center;
 	color: #fff;
 	border-radius: 56px;
@@ -128,7 +130,7 @@ img {max-width: 100%;}
 }
 
 .container {
-  padding-top: 150px;
+  padding-top: 0px;
 
 }
 
@@ -202,63 +204,71 @@ img {max-width: 100%;}
 .ncad {
 
   border-radius: 5px;
-  width: 230px;
+  width: 300px;
 
 }
 
 .esp {
 
   border-radius: 5px;
-  width: 230px;
+  width: 300px;
 
 }
 
 .custo {
 
   border-radius: 5px;
-  width: 230px;
+  width: 300px;
+
+}
+
+.msg {
+
+  border-radius: 5px;
+  width: 300px;
+  height: 100px;
 
 }
 
 .ht {
 
   border-radius: 5px;
-  width: 230px;
+  width: 300px;
 
 }
 
 .tipo {
 
   border-radius: 5px;
-  width: 230px;
+  width: 300px;
 
 }
 
 .local {
 
   border-radius: 5px;
-  width: 230px;
+  width: 300px;
 
 }
 
 .prod {
 
   border-radius: 5px;
-  width: 230px;
+  width: 300px;
 
 }
 
 .status {
 
   border-radius: 5px;
-  width: 230px;
+  width: 300px;
 
 }
 
 .bnv {
 
   float: right;
-  
+
 }
 
 

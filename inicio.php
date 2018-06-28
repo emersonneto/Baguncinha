@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
-		<link rel="icon" href="img/fire.png">
+		<link rel="icon" href="img/logo.jpg">
 			<script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
 	</head>
 	<body>

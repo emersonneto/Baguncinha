@@ -1,7 +1,6 @@
 <html>
 	<head>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title> BAGUNCINHA </title>
@@ -71,39 +70,32 @@
 
 		<form action="<? $PHP_SELF; ?>" method="POST">
 
-				<div class="form-group">
-    			<label for="exampleInputEmail1">NOME:</label>
-    			<input type="text" name="nome" class="form-control" id="exampleInputEmail1">
-  			</div>
+			<div class="banner">
+			<form action="cadastrar.php" method="POST" id="cadastro3">
+				<p>Nome:</p>
+				<input class="ncad" type="text" name="name" required="true">
 
-  			<div class="form-group">
-    			<label for="exampleInputPassword1">E-MAIL:</label>
-    			<input type="text" name="email" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp">
-  			</div>
+				<p>Email:</p>
+				<input class="ncad" type="text" name="name" required="true">
 
-				<div class="form-group">
-    			<label for="exampleInputPassword1">TELEFONE:</label>
-    			<input type="number" name="telefone" class="form-control" id="exampleInputPassword1">
-  			</div>
+				<p>Telefone:</p>
+				<input class="custo" type="number" name="cost" required="true" min="1">
 
-  			<div class="form-group">
-    			<label for="exampleSelect1">TIPO DE CONTATO:</label>
-    			<select class="form-control" id="exampleSelect1">
-      			<option>RECLAMAÇÕES</option>
-      			<option>INFORMAÇÕES</option>
-      			<option>SUGESTÕES</option>
-    			</select>
-  			</div>
+				<p>Tipo de contato:</p>
+				<select class="tipo" name="type" form="cadastro" required="true">
+				<option disabled selected value></option>
+					<option value="1">Reclamações</option>
+					<option value="2">Informações</option>
+					<option value="3">Sugestões</option>
+				</select>
 
-				<div class="form-group">
-    			<label for="exampleTextarea">MENSAGEM:</label>
-    			<textarea type="text" name="mensagem" class="form-control" id="exampleTextarea" rows="3"></textarea>
-  			</div>
+				<p>Mensagem:</p>
+				<input class="msg" type="text" name="name" required="true"> <br> <br>
+				<input class="btn-cadfunc" type="submit">
+			</form>
+			<div class="banner">
 
-
-  			<button type="submit" class="btn btn-primary">Submit</button>
-
-			  <div class="vtem-block-inside clearfix"> Baguncinha © 2018. Todos os direitos Reservados. </div> <br>
+			  <div class="vtem-block-inside clearfix"> Baguncinha Palace © 2018. Todos os direitos Reservados. </div> <br>
 </form>
 
 				</div>
